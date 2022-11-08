@@ -1,0 +1,29 @@
+1. Database sharding is the process of dividing the data into partitions which can then be stored inmultiple database instance.
+
+2.  It uses some key to partition the data. This key is an attribute of the data that you are storing.
+
+
+
+Working
+
+Suppose, there are 1000 users in your database and you have 5 database servers. 
+You want to shardthe data on userID. So you can partition the data in the following manner
+
+
+userID 000 - 199 -> database 1.
+userID 200 - 399 -> database 2.
+userID 400 - 599 -> database 3.
+userID 600 - 799 -> database 4.
+userID 800 - 999 -> database 5.
+
+
+
+Now if the userID 546 wants to perform read/write operations, 
+he will only connect to databaseinstance-3. And since there are only 200 userIDs, query processing will be fast.
+
+
+Above is example of range based sharding.
+
+
+
+
