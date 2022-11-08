@@ -1,0 +1,12 @@
+                                    Difference between Horizontal Partitioning and Sharding
+
+
+
+1.  In Horizontal Partitioning, we split the table into multiple tables in the same database instance. 
+
+2.  Where as in sharding we split the table into multiple tables across multiple database instances.
+
+
+3.  In Horizontal partitioning, we use the same database instance so the names of the partitioned tables have to be different. 
+
+4.  In sharding, since the tables are stored in different databaseinstances, table names can be the same or different.
